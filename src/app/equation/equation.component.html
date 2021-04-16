@@ -1,0 +1,13 @@
+<section>
+  <form [formGroup]="mathForm">
+    <span class="operation">{{ x }} + {{ y }} =</span>
+    <input formControlName="answer" [ngClass]="{
+      correct: mathForm.valid,
+      incorrect: mathForm.invalid && mathForm.dirty
+    }" />
+  </form>
+  <div>
+    Average time per solution:
+    <span class="time">{{ averageTime | number: "1.0-3" }}</span> seconds
+  </div>
+</section>

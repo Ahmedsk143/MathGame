@@ -1,0 +1,35 @@
+section{
+  border-right: 4px solid #000;
+  border-left: 4px solid #000;
+
+  
+}
+form {
+  display: flex;
+  justify-content: center;
+  font-size: 4.8rem;
+}
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  width: 130px;
+  text-align: center;
+}
+input:focus {
+  outline: none;
+}
+input.correct {
+  border-bottom: 2px solid green;
+}
+input.incorrect {
+  border-bottom: 2px solid red;
+}
+
+div {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 27px;
+}
+.time {
+  color: rgb(5, 63, 5);
+}
